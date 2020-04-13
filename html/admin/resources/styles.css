@@ -1,0 +1,75 @@
+/*embeddable*/
+
+.embedded {
+	background: #f5efe0;
+}
+
+/* /embeddable*/
+
+.dd-outer {
+	padding:0;
+	max-width: 600px!important;
+}
+
+.dd-outer .dropdown-menu {
+	max-width: 600px!important;
+	min-width: 500px!important;
+}
+
+.dd-outer .btn {
+	border:0;
+}
+
+.dropdown {
+	width:100%!important;
+}
+
+.jumbo {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.nav-link-active {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	display: block;
+	padding: .5rem 1rem;
+}
+
+.nav-link-active:hover {
+	text-decoration: none;
+}
+
+#navbar li:not(.active) a.dashboard {
+	color: #007bff;
+}
+
+#jumboFormContainer {
+	margin-top: 20%;
+}
+
+.jumbo {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#orgs td {
+	padding: .2rem .75rem;
+}
+
+#orgs a {
+	display: inline-block;
+	margin-right: .75rem;
+}
+
+.edit-link:not(.btn), .del-link {
+	display: inline-block;
+	margin-right: 10px;
+}

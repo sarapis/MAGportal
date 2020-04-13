@@ -1,0 +1,597 @@
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => ["http://lorempixel.com/1920/1080/nature/1","http://lorempixel.com/1920/1080/nature/2","http://lorempixel.com/1920/1080/nature/3"]
+            [initialPreviewConfig] => [{"caption":"nature-1.jpg","size":329892,"width":"120px","url":"{$url}","key":1,"type":"image"},{"caption":"nature-2.jpg","size":872378,"width":"120px","url":"{$url}","key":2,"type":"image"},{"caption":"nature-3.jpg","size":632762,"width":"120px","url":"{$url}","key":3,"type":"image"}]
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files1] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => SessionData.php
+                            [1] => DataMapper.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                            [1] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\phpF897.tmp
+                            [1] => C:\OSPanel\userdata\temp\phpF898.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                            [1] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 17261
+                            [1] => 1150
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => SessionData.php
+                            [1] => DataMapper.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                            [1] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\phpFEB3.tmp
+                            [1] => C:\OSPanel\userdata\temp\phpFEB4.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                            [1] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 17261
+                            [1] => 1150
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [fileId] => 17261_SessionData.php
+            [initialPreview] => ["http://lorempixel.com/1920/1080/nature/1","http://lorempixel.com/1920/1080/nature/2","http://lorempixel.com/1920/1080/nature/3"]
+            [initialPreviewConfig] => [{"caption":"nature-1.jpg","size":329892,"width":"120px","url":"{$url}","key":1,"type":"image"},{"caption":"nature-2.jpg","size":872378,"width":"120px","url":"{$url}","key":2,"type":"image"},{"caption":"nature-3.jpg","size":632762,"width":"120px","url":"{$url}","key":3,"type":"image"}]
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files1] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => SessionData.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php1F0F.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 17261
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [fileId] => 1150_DataMapper.php
+            [initialPreview] => ["http://lorempixel.com/1920/1080/nature/1","http://lorempixel.com/1920/1080/nature/2","http://lorempixel.com/1920/1080/nature/3"]
+            [initialPreviewConfig] => [{"caption":"nature-1.jpg","size":329892,"width":"120px","url":"{$url}","key":1,"type":"image"},{"caption":"nature-2.jpg","size":872378,"width":"120px","url":"{$url}","key":2,"type":"image"},{"caption":"nature-3.jpg","size":632762,"width":"120px","url":"{$url}","key":3,"type":"image"}]
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files1] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => DataMapper.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php25E6.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 1150
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [fileId] => 1150_DataMapper.php
+            [initialPreview] => ["http://lorempixel.com/1920/1080/nature/1","http://lorempixel.com/1920/1080/nature/2","http://lorempixel.com/1920/1080/nature/3"]
+            [initialPreviewConfig] => [{"caption":"nature-1.jpg","size":329892,"width":"120px","url":"{$url}","key":1,"type":"image"},{"caption":"nature-2.jpg","size":872378,"width":"120px","url":"{$url}","key":2,"type":"image"},{"caption":"nature-3.jpg","size":632762,"width":"120px","url":"{$url}","key":3,"type":"image"}]
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files1] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => DataMapper.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php46AC.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 1150
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => ["http://lorempixel.com/1920/1080/nature/1","http://lorempixel.com/1920/1080/nature/2","http://lorempixel.com/1920/1080/nature/3"]
+            [initialPreviewConfig] => [{"caption":"nature-1.jpg","size":329892,"width":"120px","url":"{$url}","key":1,"type":"image"},{"caption":"nature-2.jpg","size":872378,"width":"120px","url":"{$url}","key":2,"type":"image"},{"caption":"nature-3.jpg","size":632762,"width":"120px","url":"{$url}","key":3,"type":"image"}]
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files1] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => SessionData.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php4FF4.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 17261
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => SessionData.php
+                            [1] => DataMapper.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                            [1] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php5A56.tmp
+                            [1] => C:\OSPanel\userdata\temp\php5A57.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                            [1] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 17261
+                            [1] => 1150
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => index.html
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => text/html
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\phpAE30.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 21
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => view.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php7076.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 13849
+                        )
+
+                )
+
+        )
+
+)
+================================================================================
+Array13849================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => view.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\phpDB0C.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 13849
+                        )
+
+                )
+
+        )
+
+)
+13849================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => view.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php2DEB.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 13849
+                        )
+
+                )
+
+        )
+
+)
+13849================================================================================
+Array
+(
+    [GET] => Array
+        (
+        )
+
+    [POST] => Array
+        (
+            [fileId] => 13849_view.php
+            [initialPreview] => []
+            [initialPreviewConfig] => []
+            [initialPreviewThumbTags] => []
+        )
+
+    [FILES] => Array
+        (
+            [files2] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => view.php
+                        )
+
+                    [type] => Array
+                        (
+                            [0] => application/octet-stream
+                        )
+
+                    [tmp_name] => Array
+                        (
+                            [0] => C:\OSPanel\userdata\temp\php3CF7.tmp
+                        )
+
+                    [error] => Array
+                        (
+                            [0] => 0
+                        )
+
+                    [size] => Array
+                        (
+                            [0] => 13849
+                        )
+
+                )
+
+        )
+
+)
+13849
