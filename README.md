@@ -7,7 +7,7 @@ all php + html + js + css located in `/html/admin` and `/admin_include/View.php`
 
 install dependencies
 
-`cd composed
+`cd composed`
 
-composer update`
+`composer update`
 
