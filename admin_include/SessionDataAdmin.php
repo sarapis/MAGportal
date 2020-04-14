@@ -18,7 +18,7 @@ class SessionDataAdmin
 
 	function checkOrg($id)
 	{
-		return ($id == 'new') || (array_search($id, $this->user['fields']['Groups']) !== false);
+		return ($id == 'new') || ($this->user['fields']['Groups'] && (array_search($id, $this->user['fields']['Groups']) !== false));
 	}
 	
 
@@ -141,6 +141,23 @@ class SessionDataAdmin
 			}
 		return $rr;
 	}
+	
+	
+	function getIntercomView()
+	{
+		if ($this->user['fields'])
+			return [
+					'name' => implode(' ', [$this->user['fields']['First Name'], $this->user['fields']['Last Name']]),
+					'email' => $this->email,
+					'reg_date' => $this->user['fields']['registered_at'],
+				];
+		else
+				return [
+					'name' => 'New User',
+					'email' => $this->email,
+					'reg_date' => date('m/d/Y H:i:s'),
+				];
+	}
 
 	
 	function userIsNew()
@@ -210,7 +227,8 @@ class SessionDataAdmin
 					case "end":
 					case "created_at":
 					case "modified_at":
-						$r[$fv] = date('D, M jS H:i:s', strtotime($post['fields'][$fa]));
+						$t = str_replace('Z', '', $post['fields'][$fa]);
+						$r[$fv] = $post['fields'][$fa] ? date('D, M jS H:i:s', strtotime($t)) : '';
 						break;
 					default: 
 						$r[$fv] = $post['fields'][$fa];

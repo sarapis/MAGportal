@@ -481,14 +481,18 @@ class View
 							  </div>
 							  
 							  <div class="row mb-2 mt-3">
-								<div class="col-3">
-									<small>Opportunity Start Date</small> 
-									<h6><?php echo $p['start'] ?></h6>
-								</div>
-								<div class="col-3">
-									<small>Opportunity End Date</small> 
-									<h6><?php echo $p['end'] ?></h6>
-								</div>
+								<?php if ($p['start']) : ?>
+									<div class="col-3">
+										<small>Opportunity Start Date</small> 
+										<h6><?php echo $p['start'] ?></h6>
+									</div>
+								<?php endif; ?>
+								<?php if ($p['end']) : ?>
+									<div class="col-3">
+										<small>Opportunity End Date</small> 
+										<h6><?php echo $p['end'] ?></h6>
+									</div>
+								<?php endif; ?>
 								<?php if ($p['link']) : ?>
 								  <div class="col-6">
 									<small>Register Link</small>
@@ -651,6 +655,26 @@ class View
 				<pre style="color: #ddd;"><?php print_r($this->formatSession($_SESSION)); ?></pre>
 		<?php
 		}
+	}
+
+
+	public function intercom($dd)
+	{
+	?>            
+		<script>
+		  window.intercomSettings = {
+			app_id: "<?php echo INTERCOM_KEY ?>",
+			name: "<?php echo $dd['name'] ?>", // Full name
+			email: "<?php echo $dd['email'] ?>", // Email address
+			created_at: "<?php echo strtotime($dd['reg_date']) ?>" // Signup date as a Unix timestamp
+		  };
+		</script>
+
+		<script>
+		// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/wib83ryk'
+		(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/<?php echo INTERCOM_KEY ?>';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+		</script>
+	<?php
 	}
 
 

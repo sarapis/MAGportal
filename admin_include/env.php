@@ -11,7 +11,7 @@ define('ADMIN_AUTH_EMAIL', 'authbot@wegov.nyc');
 define('ADMIN_AUTH_SENDER', 'Auth Bot');
 
 define('ADMIN_AIRTABLE_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
-define('ADMIN_AIRTABLE_DOC', 'appt10gfQj2fn0mLB');
+define('ADMIN_AIRTABLE_DOC', 'appF8rJZ3XAkzWOO9');
 define('ADMIN_AIRTABLE_USR', 'users');
 define('ADMIN_AIRTABLE_GR', 'Groups');
 define('ADMIN_AIRTABLE_POSTS', 'Request Volunteers');
@@ -29,7 +29,8 @@ $AdminUserFormFields = [		// input name => airtable field name
 	'group_id' => 'Groups',
 	'group_name' => 'Group Name',
 	'group_last_modified' => 'Group Last Modified',
-	'group_posts_num' => 'Request Volunteers Num',
+	'group_posts_num' => 'Request Count',
+	'registered_at' => 'Registered At',
 	'is_new' => 'is_new',
 ];
 
