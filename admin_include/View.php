@@ -84,6 +84,36 @@ class View
 	}
 
 
+	public function emailUpdate($email)
+	{
+		?><div class="jumbo">You have requested email changing.<br/>Please verify new email address.</div>
+		<form id="redirect" enctype="multipart/form-data" action="auth.php<?php embUrl() ?>" method="POST">
+			<input type="hidden" name="email" value="<?php echo $email ?>">
+		</form>
+		<script>
+			window.setTimeout(function (){	
+				$('#redirect').submit();
+			}, 1000);
+		</script>
+		<?php
+	}
+
+
+	public function emailUpdateFailed()
+	{
+		?><div class="jumbo">User with entered email exists in database.<br/>Please try again.</div>
+		<form id="redirect" enctype="multipart/form-data" action="dashboard.php<?php embUrl() ?>" method="POST">
+			<input type="hidden" name="dummy">
+		</form>
+		<script>
+			window.setTimeout(function (){	
+				$('#redirect').submit();
+			}, 3000);
+		</script>
+		<?php
+	}
+
+
 	public function jumbo($html)
 	{
 		?><div class="jumbo"><?php echo $html; ?></div>

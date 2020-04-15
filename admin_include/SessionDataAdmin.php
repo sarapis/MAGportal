@@ -52,9 +52,19 @@ class SessionDataAdmin
 			return;
 		$this->email = $email;
 		$this->embeddedAuth = isset($_GET['embedded']);
-		$this->updateUser();
+		if (!$this->delayedEmailUpdate)					//
+			$this->updateUser();						//
 		$this->isNew = $this->user['is_new'];
 		return $this->genAuthToken();
+	}
+	
+	function setDelayedEmail()							///
+	{
+		global $AdminUserFormFields;
+		$this->delayedEmailUpdate = false;
+		$rr[$AdminUserFormFields['email']] = $this->email;
+		$this->airtableResponse = AirtableAdmin::updateUser($this->user['id'], $rr);
+		return $this->airtableResponse['records'] <> null;
 	}
 	
 	function setProfile($dd)
@@ -66,8 +76,15 @@ class SessionDataAdmin
 		foreach ($AdminUserFormFields as $fv=>$fa)
 			if ($_POST[$fv] && $_POST[$fv] <> $user['fields'][$fa])
 			{
-				$user['fields'][$fa] = $_POST[$fv];
-				$rr[$fa] = $_POST[$fv];
+				if ($fv == 'email')										//	
+					if (AirtableAdmin::checkUserByEmail($_POST[$fv]))		//
+						$this->delayedEmailIsDouble = true;			//
+					else
+						$this->delayedEmailUpdate = true;			//
+				else {										//
+					$user['fields'][$fa] = $_POST[$fv];
+					$rr[$fa] = $_POST[$fv];
+				}
 			}
 			
 		$this->user = $user;

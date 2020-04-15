@@ -22,9 +22,30 @@ $v = View::engine();
 		$v->redirect('https://mutualaid.nyc/manage-your-group/');
 	}
 	
+// is pending email update
+	if ($d->delayedEmailUpdate)						///
+	{
+		$d->setDelayedEmail();
+		$d->updateUser();
+	}	
+
 // is signed profile
 	if ($_POST['src'] == 'profile')
+	{
 		$d->setProfile($_POST);
+		if ($d->delayedEmailUpdate)					///
+		{
+			$d->isVerified = false;
+			$v->simplePage('emailUpdate', $_POST['email']);
+			die();
+		}
+		if ($d->delayedEmailIsDouble)					///
+		{
+			$d->delayedEmailIsDouble = false;
+			$v->simplePage('emailUpdateFailed', $_POST['email']);
+			die();
+		}
+	}	
 	
 // is user just registered - sign profile
 	if ($d->userIsNew())
@@ -40,11 +61,11 @@ $v = View::engine();
 	
 
 $d->updateUser();
-$userDS = $d->getUserView();
 
 // DRAW PAGE
 
 $v->headers();
-$v->dashboard($userDS);
+$v->dashboard($d->getUserView());
 $v->session();
+$v->intercom($d->getIntercomView());
 $v->footers();

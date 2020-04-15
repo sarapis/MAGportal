@@ -32,6 +32,21 @@ class AirtableAdmin
 	}
 
 
+	static function checkUserByEmail($email)								///
+	{
+		$hh = ["Authorization: Bearer " . ADMIN_AIRTABLE_KEY];
+		$url = sprintf(
+						'https://api.airtable.com/v0/%s/%s?filterByFormula=%s', 
+						ADMIN_AIRTABLE_DOC,
+						ADMIN_AIRTABLE_USR,
+						rawurlencode("{Email}='{$email}'")
+					);
+		$resp = Curl::exec($url, [CURLOPT_HTTPHEADER => $hh]);
+		$rr = json_decode($resp, true);
+		return count((array)$rr['records']) > 0;
+	}
+
+	
 	static function newUser($fields=['Name' => ''])
 	{
 		$hh = ['Authorization: Bearer ' . ADMIN_AIRTABLE_KEY, 'Content-Type: application/json'];
