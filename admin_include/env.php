@@ -4,25 +4,27 @@ define('HOST', 'https://group-mgmt.mutualaid.nyc');
 define('ADMIN_SESSION_VERBOSE', false);
 
 
-////// VENDOR APP /////////////////////////////////////////////////////////////////////////////////////////////////////////
+////// MAG PORTAL APP /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-define('SENDGRID_API_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+define('SENDGRID_API_KEY', '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');
 define('ADMIN_AUTH_EMAIL', 'authbot@wegov.nyc');
 define('ADMIN_AUTH_SENDER', 'Auth Bot');
 
-define('ADMIN_AIRTABLE_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
-define('ADMIN_AIRTABLE_DOC', 'appF8rJZ3XAkzWOO9');
+define('ADMIN_AIRTABLE_KEY', 'keyHitlaDOEX0C2X8');
+//define('ADMIN_AIRTABLE_DOC', 'appt10gfQj2fn0mLB');	// test
+define('ADMIN_AIRTABLE_DOC', 'appF8rJZ3XAkzWOO9');	// wrk
 define('ADMIN_AIRTABLE_USR', 'users');
 define('ADMIN_AIRTABLE_GR', 'Groups');
-define('ADMIN_AIRTABLE_POSTS', 'Request Volunteers');
-
+define('ADMIN_AIRTABLE_POSTS', 'Requests');
 define('ADMIN_FILES_DIR', 'adminfiles');
-
 define('ADMIN_SESSION_DURATION_LIM', 7200);
+
+define('INTERCOM_KEY', 'wib83ryk');
+
 
 
 $AdminUserFormFields = [		// input name => airtable field name
-	'email' => 'Email',
+	'email' => 'Email',			// auth email field [input name] should remain 'email'
 	'first_name' => 'First Name',
 	'last_name' => 'Last Name',
 	'phone' => 'Phone',
@@ -36,7 +38,7 @@ $AdminUserFormFields = [		// input name => airtable field name
 
 
 $AdminGrFormFields = [		// input name => airtable field name
-	'name' => 'Group Name',
+	'name' => 'Group Name',	
 	'description' => 'Short Description',
 	'email' => 'Group Email',
 	'website' => 'Website',
@@ -68,6 +70,7 @@ $PostsFields = [		// input name => airtable field name
 	'created_at' => 'Created Time',
 	'modified_at' => 'Status Last Modified',
 	'status' => 'Status',
+	'user' => 'user',
 	'id' => 'id',
 ];
 

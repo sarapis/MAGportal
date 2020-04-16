@@ -345,7 +345,7 @@ class View
 		  <div class="row">
 			  <div class="form-group col">
 				<label for="name">Group Name</label>
-				<input type="text" class="form-control" id="name" name="name"<?php $vv->drawValue('name'); ?>>
+				<input type="text" class="form-control" id="name" name="name"<?php $vv->drawValue('name'); ?> required>
 			  </div>
 		  </div>
 
@@ -576,7 +576,7 @@ class View
 		  <div class="row">
 			  <div class="form-group col-8">
 				<label for="label">Request Label</label>
-				<input type="text" class="form-control" id="label" name="label">
+				<input type="text" class="form-control" id="label" name="label" required>
 				<small>This is the internal name for this request. This label will be used to help you identify this request. It will not be made public.</small>
 			  </div>
 			  

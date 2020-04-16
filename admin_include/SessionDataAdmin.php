@@ -313,8 +313,12 @@ class SessionDataAdmin
 		global $PostsFields;
 		$rr = [];
 		foreach ($PostsFields as $fv=>$fa)
+		{
 			if ($_POST[$fv])
 				$rr[$fa] = $_POST[$fv];
+			if ($fv == 'user')
+				$rr[$fa] = [$this->user['id']];
+		}	
 		return $rr;
 	}
 
