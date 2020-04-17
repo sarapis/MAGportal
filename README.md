@@ -17,7 +17,7 @@ From there, users submit their email address. An email is then sent to them that
 By default it is supposed that your server root folder is /var/www/html
 
     cd /var/www
-	git clone https://github.com/sarapis/WeGov_MAGadmin.git
+	git clone https://github.com/sarapis/MAGportal.git
     cd composed
     composer update
 	
