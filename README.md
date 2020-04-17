@@ -23,7 +23,7 @@ Copy Airtable API key. Click show API key checkbox and scroll down to Authentica
 
 Create account at Sendgrid.com, create and copy API key
 
-Create account at Intercom, create and copy API key
+Create account at Intercom, copy API key
 
 
 Edit credentials file
