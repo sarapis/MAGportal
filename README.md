@@ -1,4 +1,4 @@
-# Mutual Aid Group (MAG) Protal
+# MAG Portal
 
 The Mutual Aid Groups (MAG) Administration Protal is a client-side web application that offers users an interface to manage their own group's information, an only their own group's information, in the MANYC Groups Airtable.
 
