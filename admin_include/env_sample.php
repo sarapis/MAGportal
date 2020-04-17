@@ -1,29 +1,30 @@
 <?php
-define('HOST', 'https://group-mgmt.mutualaid.nyc');
+define('HOST', 'XXXXXXXX');						// your host like https://group-mgmt.mutualaid.nyc
 
 define('ADMIN_SESSION_VERBOSE', false);
 
 
 ////// MAG PORTAL APP /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-define('SENDGRID_API_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
-define('ADMIN_AUTH_EMAIL', 'authbot@wegov.nyc');
+define('SENDGRID_API_KEY', 'XXXXXXXX');
+define('ADMIN_AUTH_EMAIL', 'XXXXXXXX');			// email address which user will see as a sender of authentication emails. Any email address which user can contact you with
 define('ADMIN_AUTH_SENDER', 'Auth Bot');
 
-define('ADMIN_AIRTABLE_KEY', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
-//define('ADMIN_AIRTABLE_DOC', 'appt10gfQj2fn0mLB');	// test
-define('ADMIN_AIRTABLE_DOC', 'appF8rJZ3XAkzWOO9');	// wrk
+define('ADMIN_AIRTABLE_KEY', 'XXXXXXXX');		// Airtable API key
+define('ADMIN_AIRTABLE_DOC', 'XXXXXXXX');		// Airtable data document ID
 define('ADMIN_AIRTABLE_USR', 'users');
 define('ADMIN_AIRTABLE_GR', 'Groups');
 define('ADMIN_AIRTABLE_POSTS', 'Requests');
 define('ADMIN_FILES_DIR', 'adminfiles');
 define('ADMIN_SESSION_DURATION_LIM', 7200);
 
-define('INTERCOM_KEY', 'wib83ryk');
+define('INTERCOM_KEY', 'XXXXXXXX');				// Intercom key
 
 
 
-$AdminUserFormFields = [		// input name => airtable field name
+////// Airtable mapping /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$AdminUserFormFields = [		// html input name => airtable field name
 	'email' => 'Email',			// auth email field [input name] should remain 'email'
 	'first_name' => 'First Name',
 	'last_name' => 'Last Name',
@@ -37,7 +38,7 @@ $AdminUserFormFields = [		// input name => airtable field name
 ];
 
 
-$AdminGrFormFields = [		// input name => airtable field name
+$AdminGrFormFields = [		// html input name => airtable field name
 	'name' => 'Group Name',	
 	'description' => 'Short Description',
 	'email' => 'Group Email',

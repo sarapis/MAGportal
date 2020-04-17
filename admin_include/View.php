@@ -645,6 +645,7 @@ class View
 		  <hr>
 		  <input type="hidden" name="group[]" value="<?php echo $dd['id']; ?>">
 		  <input type="hidden" name="status" value="Requested">
+		  <input type="hidden" name="reqtype" value="Volunteers">
 		  <input type="hidden" name="group_id" value="<?php echo $dd['id']; ?>">
 		  <input type="hidden" name="src" value="vrequest">
 		  <div class="row">
