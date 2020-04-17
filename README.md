@@ -19,9 +19,11 @@ Open instance, go to Help > API documentation
 
 Copy Airtable doc ID from API documentation url. For https://airtable.com/appAaBbCcDdEeFf/api/docs#curl/introduction doc ID is appAaBbCcDdEeFf
 
-Copy Airtable API key. Click 'show API key' checkbox and scroll down to 'Authentication' section.
+Copy Airtable API key. Click show API key checkbox and scroll down to Authentication section.
 
 Create account at Sendgrid.com, create and copy API key
+
+Create account at Intercom, create and copy API key
 
 
 Edit credentials file
